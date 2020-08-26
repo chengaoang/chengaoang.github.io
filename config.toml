@@ -1,4 +1,5 @@
 baseURL = "https://chengaoang.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+title = ""
+
+theme = "LLgo"

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>baseof</title>
+      {{- block "static" . }}{{- end }}
+    </head>
+    {{- partial "head.html" . -}}
+    <body>
+      <div class="container">
+        <header>
+<!--          <div>-->
+          {{- partial "header.html" . -}}
+<!--          </div>-->
+        </header>
+        <div class="tag">
+<!--          <div>-->
+          this is tag div
+<!--          </div>-->
+        </div>
+        <aside>
+          {{- block "aside" . }}{{- end }}
+        </aside>
+        <article>
+          <div id="test"></div>
+          {{- block "main" .}}{{- end}}
+        </article>
+        <footer>
+          {{- partial "footer.html" . -}}
+        </footer>
+      </div>
+    </body>
+</html>
