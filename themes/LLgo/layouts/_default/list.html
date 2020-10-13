@@ -5,12 +5,12 @@
   <title>List</title>
 </head>
 <body>
-<ul>
+<ol>
 {{ range .Pages }}
   <li>
     <a href="javascript:void(0);" onclick="loadDoc({{ .Permalink }})">{{ .Date.Format "2006-01-02" }}  {{ .Title }}</a>
   </li>
 {{ end }}
-</ul>
+</ol>
 </body>
 </html>
